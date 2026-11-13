@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sweet Crumbs - Freshly baked cakes, delicious desserts and custom celebration cakes.">
+    <title>Sweet Crumbs | Premium Cake Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="container navbar">
+        <a href="#home" class="logo">Sweet<span>Crumbs.</span></a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#shop">Our Cakes</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="cart-button" id="cartButton">
+                🛒 Cart <span id="cartCount">0</span>
+            </button>
+            <button class="menu-button" id="menuButton" aria-label="Toggle menu">☰</button>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="container hero-content">
+
+        <div class="hero-text">
+            <span class="eyebrow">BAKED WITH LOVE ♥</span>
+
+            <h1>Life Is Better With A Little <span>Sweetness.</span></h1>
+
+            <p>
+                Discover handcrafted cakes, delicious desserts
+                and unforgettable flavours made fresh with love
+                for every special moment.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#shop" class="btn">Explore Cakes →</a>
+                <a href="#about" class="secondary-btn">Our Story</a>
+            </div>
+
+            <div class="hero-rating">
+                ⭐⭐⭐⭐⭐ <span>Made with love, served with happiness</span>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=900" alt="Beautiful chocolate celebration cake">
+            <div class="floating-card">
+                <strong>Freshly Baked</strong>
+                <span>Every single day ♥</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+    <div class="container features-grid">
+        <div class="feature">
+            <span>🎂</span>
+            <div><h3>Freshly Baked</h3><p>Made fresh every day</p></div>
+        </div>
+
+        <div class="feature">
+            <span>🍓</span>
+            <div><h3>Quality Ingredients</h3><p>Carefully selected ingredients</p></div>
+        </div>
+
+        <div class="feature">
+            <span>🚚</span>
+            <div><h3>Fast Delivery</h3><p>Delivered with care</p></div>
+        </div>
+
+        <div class="feature">
+            <span>💝</span>
+            <div><h3>Made With Love</h3><p>Perfect for every occasion</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section-padding" id="about">
+    <div class="container about-grid">
+
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=900" alt="Fresh bakery pastries">
+        </div>
+
+        <div class="about-content">
+            <span class="section-label">OUR STORY</span>
+
+            <h2>A Little Bakery With A Lot Of Love.</h2>
+
+            <p>
+                Welcome to Sweet Crumbs! We believe every celebration
+                deserves something delicious. Our passion is creating
+                beautiful cakes and desserts that bring smiles to
+                every occasion.
+            </p>
+
+            <p>
+                From classic chocolate cakes to elegant custom
+                creations, every treat is prepared with care,
+                creativity and the finest ingredients.
+            </p>
+
+            <a href="#shop" class="btn">Discover Our Cakes →</a>
+
+            <div class="about-stats">
+                <div><h3>5+</h3><p>Years of Baking</p></div>
+                <div><h3>2K+</h3><p>Happy Customers</p></div>
+                <div><h3>30+</h3><p>Cake Varieties</p></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories section-padding" id="categories">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">EXPLORE OUR MENU</span>
+            <h2>Something Sweet For Everyone</h2>
+            <p>Choose your favourite treat from our delicious collection.</p>
+        </div>
+
+        <div class="category-grid">
+
+            <a href="#shop" class="category-card" data-category="Birthday">
+                <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=600" alt="Birthday cake">
+                <div><h3>Birthday Cakes</h3><span>Celebrate beautifully →</span></div>
+            </a>
+
+            <a href="#shop" class="category-card" data-category="Chocolate">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Chocolate cake">
+                <div><h3>Chocolate Cakes</h3><span>For chocolate lovers →</span></div>
+            </a>
+
+            <a href="#shop" class="category-card" data-category="Wedding">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600" alt="Wedding cake">
+                <div><h3>Wedding Cakes</h3><span>Made for special days →</span></div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- SHOP -->
+<section class="shop section-padding" id="shop">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">OUR BESTSELLERS</span>
+            <h2>Fresh From Our Oven</h2>
+            <p>Delicious cakes made to make your day sweeter.</p>
+        </div>
+
+        <div class="shop-controls">
+            <input type="search" id="searchInput" placeholder="Search your favourite cake...">
+
+            <select id="categoryFilter">
+                <option value="all">All Cakes</option>
+                <option value="Birthday">Birthday Cakes</option>
+                <option value="Chocolate">Chocolate Cakes</option>
+                <option value="Wedding">Wedding Cakes</option>
+                <option value="Classic">Classic Cakes</option>
+            </select>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <article class="product-card" data-name="Chocolate Truffle" data-category="Chocolate" data-price="650">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700" alt="Chocolate truffle cake">
+                    <span class="product-badge">BESTSELLER</span>
+                </div>
+                <div class="product-info">
+                    <span class="product-category">CHOCOLATE CAKE</span>
+                    <h3>Chocolate Truffle</h3>
+                    <p>Rich chocolate layers with creamy ganache.</p>
+                    <div class="product-bottom">
+                        <strong>₹650</strong>
+                        <button class="add-cart" data-name="Chocolate Truffle" data-price="650">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Strawberry Delight" data-category="Classic" data-price="550">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=700" alt="Strawberry cake">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">CLASSIC CAKE</span>
+                    <h3>Strawberry Delight</h3>
+                    <p>Soft vanilla sponge with fresh strawberry flavour.</p>
+                    <div class="product-bottom">
+                        <strong>₹550</strong>
+                        <button class="add-cart" data-name="Strawberry Delight" data-price="550">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Birthday Special" data-category="Birthday" data-price="850">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=700" alt="Birthday special cake">
+                    <span class="product-badge">POPULAR</span>
+                </div>
+                <div class="product-info">
+                    <span class="product-category">BIRTHDAY CAKE</span>
+                    <h3>Birthday Special</h3>
+                    <p>A beautiful cake for your happiest moments.</p>
+                    <div class="product-bottom">
+                        <strong>₹850</strong>
+                        <button class="add-cart" data-name="Birthday Special" data-price="850">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Red Velvet" data-category="Classic" data-price="750">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=700" alt="Red velvet cake">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">CLASSIC CAKE</span>
+                    <h3>Red Velvet</h3>
+                    <p>Soft red velvet with smooth cream cheese frosting.</p>
+                    <div class="product-bottom">
+                        <strong>₹750</strong>
+                        <button class="add-cart" data-name="Red Velvet" data-price="750">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Wedding Elegance" data-category="Wedding" data-price="2500">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=700" alt="Wedding celebration cake">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">WEDDING CAKE</span>
+                    <h3>Wedding Elegance</h3>
+                    <p>An elegant cake for unforgettable celebrations.</p>
+                    <div class="product-bottom">
+                        <strong>₹2,500</strong>
+                        <button class="add-cart" data-name="Wedding Elegance" data-price="2500">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-name="Dark Chocolate" data-category="Chocolate" data-price="700">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=700" alt="Dark chocolate dessert">
+                </div>
+                <div class="product-info">
+                    <span class="product-category">CHOCOLATE CAKE</span>
+                    <h3>Dark Chocolate</h3>
+                    <p>Delicious dark chocolate with a rich flavour.</p>
+                    <div class="product-bottom">
+                        <strong>₹700</strong>
+                        <button class="add-cart" data-name="Dark Chocolate" data-price="700">+ Add</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="no-results" id="noResults">No cakes found. Try another search.</p>
+    </div>
+</section>
+
+<!-- CART MODAL -->
+<div class="cart-overlay" id="cartOverlay">
+    <div class="cart-modal">
+        <div class="cart-header">
+            <h2>Your Shopping Cart</h2>
+            <button id="closeCart" aria-label="Close cart">✕</button>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-footer">
+            <h3>Total: <span id="cartTotal">₹0</span></h3>
+            <button class="btn checkout-btn" id="checkoutBtn">Proceed to Order</button>
+        </div>
+    </div>
+</div>
+
+<!-- TESTIMONIAL -->
+<section class="testimonials section-padding">
+    <div class="container">
+        <div class="section-heading">
+            <span class="section-label">HAPPY CUSTOMERS</span>
+            <h2>Sweet Words From Our Customers</h2>
+        </div>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"The chocolate cake was absolutely delicious. Beautiful design and amazing taste!"</p>
+                <h4>Priya R.</h4>
+                <span>Happy Customer</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Ordered a birthday cake and everyone loved it. Excellent quality and presentation."</p>
+                <h4>Arun K.</h4>
+                <span>Happy Customer</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Fresh, tasty and beautifully decorated cakes. Definitely ordering again!"</p>
+                <h4>Meena S.</h4>
+                <span>Happy Customer</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact section-padding" id="contact">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">GET IN TOUCH</span>
+            <h2>Let's Make Your Celebration Sweeter</h2>
+            <p>Have a question or a custom cake request? Send us a message.</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+                <h3>We'd Love To Hear From You!</h3>
+                <p>Let us help you make every special occasion memorable with our delicious cakes.</p>
+
+                <div class="contact-detail">📍 Chennai, Tamil Nadu, India</div>
+                <div class="contact-detail">📞 +91 98765 43210</div>
+                <div class="contact-detail">✉ hello@sweetcrumbs.com</div>
+
+                <div class="opening-hours">
+                    <h4>Opening Hours</h4>
+                    <p>Monday – Saturday: 9 AM – 9 PM</p>
+                    <p>Sunday: 10 AM – 7 PM</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <input type="text" id="customerName" placeholder="Your Name" required>
+                <input type="email" id="customerEmail" placeholder="Your Email" required>
+                <input type="tel" id="customerPhone" placeholder="Phone Number" required>
+                <textarea id="customerMessage" placeholder="Your Message or Cake Requirements" required></textarea>
+                <button type="submit" class="btn">Send Message →</button>
+                <p id="formMessage"></p>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-content">
+        <a href="#home" class="logo">Sweet<span>Crumbs.</span></a>
+        <p>Freshly baked happiness, one slice at a time.</p>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p class="copyright">© <span id="year"></span> Sweet Crumbs. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
