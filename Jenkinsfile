@@ -17,16 +17,10 @@ pipeline {
             }
         }
 
-        // stage('Stop Old Container') {
-        //     steps {
-        //         sh 'docker stop jenkins-web-container || true'
-        //         sh 'docker rm jenkins-web-container || true'
-        //     }
-        // }
 
         stage('Run New Container') {
             steps {
-                sh 'docker run -d --name jenkins-web-container -p 8081:80 jenkins-web-app'
+                sh 'https://github.com/sivasankari004/cake-bake.git'
             }
         }
 
